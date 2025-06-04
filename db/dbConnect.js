@@ -3,7 +3,9 @@ require("dotenv").config();
 
 async function dbConnect() {
   mongoose
-    .connect("mongodb+srv://root:Manh2004@ltweb.ey0ohjb.mongodb.net/")
+    .connect(
+      "mongodb+srv://lab3:Binh190304.@cluster0.lrslf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    )
     .then(() => {
       console.log("Successfully connected to MongoDB Atlas!");
     })
